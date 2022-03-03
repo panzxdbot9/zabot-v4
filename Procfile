@@ -1,1 +1,1 @@
-worker: npm i -g forever && forever start -c "node . --db 'mongodb+srv://ozan:Akhmad6825@cluster0.mflne.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'" && forever logs 0 -f
+worker: npm i -g pm2 && pm2 start "node . --db 'mongodb+srv://ozan:Akhmad6825@cluster0.mflne.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'" && pm2 save && pm2 logs
