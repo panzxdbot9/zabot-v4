@@ -1,1 +1,1 @@
-worker: npm i -g forever && forever -o common.log -e common.log index.js && tail -f common.log
+worker: node . --db "mongodb+srv://ozan:Akhmad6825@cluster0.mflne.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
